@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('pages', 'PageController'); //7 rutas
+
+
+/*
+se puede trabajar de esta forma basica
+
+Route::view('vistas', 'welcome', ['app' => 'hola']);
+
+Route::get('prueba', function () {
+    return view('hola');
+});
+
+*/
